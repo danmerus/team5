@@ -1,0 +1,31 @@
+.contact
+{
+    width: 30%;
+    height: 100px;
+    border: solid black 1px;
+    margin: 10px;
+}
+
+img {
+    margin-left: 10px;
+    margin-top: 10px;
+    width:100px;
+    height: auto;
+    border-radius: 60%;
+}
+
+.name {
+    text-align: center;
+    margin-top: -40px;
+    margin-left: 20px;
+    font-family: Arial, serif;
+    font-size: 20px;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+}
