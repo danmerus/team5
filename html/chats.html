@@ -1,18 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <link href="chats.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href='frame.css'>
 </head>
 <body>
-<div class="contact">
-    <div class="avatar">
-        <img src="1.jpg" alt="Avatar">
+<div class="menu">
+    <div class="back">
+        <i class="fa fa-chevron-left"></i>
+        <img src="https://i.imgur.com/DY6gND0.png" draggable="false"/>
     </div>
-    <div class="name">
-        Павел
+    <div class="name">Alex</div>
+    <div class="last">18:09</div>
+</div>
+<div class="contact-container">
+    <div class="contact">
+        <div class="avatar-container">
+            <img src="1.jpg" alt="Avatar">
+        </div>
+        <div class="contact-name">
+            Павел
+        </div>
     </div>
 </div>
+
+<div class="chat-container">
+    <ol class="chat">
+        <li class="other">
+            <div class="avatar"><img src="https://i.imgur.com/DY6gND0.png" draggable="false"/></div>
+            <div class="msg">
+                <p>Привет, как дела?</p>
+                <time>20:17</time>
+            </div>
+        </li>
+        <li class="self">
+            <div class="avatar"><img src="https://i.imgur.com/HYcn9xO.png" draggable="false"/></div>
+            <div class="msg">
+                <p>Я на выборы никогда не ходил, но в этот раз точно пойду за Грудинина голосовать. Кандидат от народа!</p>
+                <time>20:18</time>
+            </div>
+        </li>
+
+    </ol>
+    <div class="textarea-decorator">
+        <input class="textarea" type="text" placeholder="Type here!"/></div></div>
 </body>
 </html>
