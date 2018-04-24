@@ -9,7 +9,7 @@
     margin: 10px;
     padding: 10px;
     border-right: 2px rgb(255, 129, 124) double;
-    background: rgba(255, 229, 204, 0.15);
+    background: rgba(255, 229, 204, 0.55);
 }
 .metadata:hover
 {

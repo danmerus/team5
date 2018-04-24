@@ -7,11 +7,17 @@ url(https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css)
     margin-bottom: 100px;
     float:right;
     width: 50%;
+    background-image: url("https://78.media.tumblr.com/775053831fe1c871cfef2e47ec5ea7df/tumblr_obykzyjxZt1vbllj8o3_1280.png");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 .show-participants-button
 {
     margin-top: 10px;
+    margin-left: 20px;
     height: 30px;
     border: none;
     border-radius: 8px;
