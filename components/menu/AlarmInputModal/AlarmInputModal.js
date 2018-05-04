@@ -52,12 +52,13 @@ export default class Modal extends React.Component {
                             </label>
                             <label className='alarm__mobile-label'>
                                 <span className='alarm__mobile-text'>Куда позвонить:</span>
-                                <input className='alarm__mobile-input' type="tel" placeholder="+79222040800"/>
+                                <input className='alarm__mobile-input'
+                                    type="tel" placeholder="+79222040800"/>
                             </label>
                         </div>
                     </div>
                     <button className='profile__close-button'
-                            onClick={this.state.handleCloseModal}>close</button>
+                        onClick={this.state.handleCloseModal}>close</button>
                 </div>
             </ReactModal>);
     }

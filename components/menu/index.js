@@ -65,7 +65,7 @@ export default class Menu extends React.Component {
                 />}
                 {<AlarmInputModal
                     showModal={this.state.showAlarmModal}
-                   handleCloseModal={this.handleCloseAlarmModal}
+                    handleCloseModal={this.handleCloseAlarmModal}
                 />}
 
                 <div className='menu__avatar-wrapper'>
