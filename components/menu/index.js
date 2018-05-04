@@ -57,16 +57,16 @@ export default class Menu extends React.Component {
 
         return (
             <div className='menu'>
-                {<ProfileModal
+                <ProfileModal
                     showModal={this.state.showModal}
                     username={this.state.name}
                     handleCloseModal={this.handleCloseModal}
                     avatarUrl={this.state.avatarUrl}
-                />}
-                {<AlarmInputModal
+                />
+                <AlarmInputModal
                     showModal={this.state.showAlarmModal}
                     handleCloseModal={this.handleCloseAlarmModal}
-                />}
+                />
 
                 <div className='menu__avatar-wrapper'>
                     <img

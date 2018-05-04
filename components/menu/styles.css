@@ -80,6 +80,6 @@ url(https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css)
 
 .menu__alarm-button:hover
 {
-    background-color: #2098D1;
-    color: white;
+    background-color: #2098d1;
+    color: #fff;
 }

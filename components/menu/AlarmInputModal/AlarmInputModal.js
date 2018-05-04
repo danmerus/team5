@@ -1,5 +1,9 @@
 import React from 'react';
 import ReactModal from 'react-modal';
+import Phone from 'react-phone-number-input';
+import 'react-phone-number-input/rrui.css';
+import 'react-phone-number-input/style.css';
+
 
 import './styles.css';
 
@@ -14,7 +18,7 @@ export default class Modal extends React.Component {
             showModal: nextProps.showModal,
             username: nextProps.username,
             handleCloseModal: nextProps.handleCloseModal,
-            githubUrl: 'https://github.com/' + nextProps.username,
+            githubUrl: `https://github.com/${nextProps.username}`,
             avatarUrl: nextProps.avatarUrl
         };
     }
@@ -27,18 +31,18 @@ export default class Modal extends React.Component {
                 shouldCloseOnOverlayClick={true}
                 style={{
                     overlay: {
-                        backgroundColor: 'rgba(0,0,0,0.2)',
+                        backgroundColor: 'rgba(0, 0, 0, .2)',
                         justifyContent: 'center',
                         zIndex: 1000
                     },
                     content: {
-                        backgroundColor: 'rgba(0,0,0,0.0)',
+                        backgroundColor: 'rgba(0, 0, 0, .0)',
                         display: 'flex',
                         flexDirection: 'column',
                         justifyContent: 'center',
                         margin: 'auto',
                         width: 470,
-                        height: 220,
+                        height: 250,
                         border: null
                     }
                 }}
@@ -50,11 +54,15 @@ export default class Modal extends React.Component {
                                 <span className='alarm__datetime-text'>Когда разбудить:</span>
                                 <input className='alarm__datetime-input' type="datetime-local"/>
                             </label>
-                            <label className='alarm__mobile-label'>
+                            <form className='alarm__mobile-label'>
                                 <span className='alarm__mobile-text'>Куда позвонить:</span>
-                                <input className='alarm__mobile-input'
-                                    type="tel" placeholder="+79222040800"/>
-                            </label>
+                                <Phone
+                                    className='alarm__mobile-input'
+                                    country="RU"
+                                    placeholder="Ваш телефон"
+                                    value={ this.state.value }
+                                    onChange={ value => this.setState({ value }) }/>
+                            </form>
                         </div>
                     </div>
                     <button className='profile__close-button'
