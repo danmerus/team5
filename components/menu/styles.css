@@ -39,10 +39,47 @@ url(https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css)
 
 .menu__name-and-time
 {
-    font-family: 'Lato';
+    font-family: 'Lato', serif;
     font-size: 25px;
     font-weight: 300;
     color: rgba(255,255,255,0.98);
     cursor: default;
     margin-left: 15px;
+}
+
+.menu__alarm-button
+{
+    margin-left: auto;
+    margin-right: 10px;
+    padding-top: 5px;
+    font-family: 'Trebuchet MS', serif;
+    font-size: 24px;
+    font-weight: 300;
+    cursor: pointer;
+    border: none;
+    color: #fff;
+    background: none;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    overflow: hidden;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: color, background-color;
+    transition-property: color, background-color;
+}
+
+.menu__alarm-icon
+{
+    color: #fff;
+    height: 35px;
+    width: 30px;
+}
+
+.menu__alarm-button:hover
+{
+    background-color: #2098D1;
+    color: white;
 }
